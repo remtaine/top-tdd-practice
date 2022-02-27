@@ -13,5 +13,9 @@ it("mixed caps", () => {
 });
 
 it("wrapped", () => {
-    expect(caesarCipher("aBc")).toBe("bCd");
+    expect(caesarCipher("ZBz")).toBe("ACa");
+});
+
+it("punctuation", () => {
+    expect(caesarCipher("ZBz!!!@#$")).toBe("ACa!!!@#$");
 });
