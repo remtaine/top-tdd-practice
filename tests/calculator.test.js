@@ -1,5 +1,17 @@
-import {add, subtract, multiply, divide} from "../js/calculator"
+const calculator = require("../js/calculator");
 
-it("calculator add", () => {
-    expect(calculator(1, 2)).toBe(3);
+it("add", () => {
+    expect(calculator.add(1, 2)).toBe(3);
+});
+
+it("subtract", () => {
+    expect(calculator.subtract(1, 2)).toBe(-1);
+});
+
+it("multiply", () => {
+    expect(calculator.multiply(1, 2)).toBe(2);
+});
+
+it("divide", () => {
+    expect(calculator.divide(12, 2)).toBe(6);
 });
